@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NestedLoops</title>
+</head>
+<body>
+<script>
+let table = "<table border = '1' width = '400' cellspacing ='0' cellpadding='4'>"
+    for(i=1;i<=10;i++){
+        table = table + "<tr>";
+        //Tạo hàng cho bảng
+        for (j=1;j<=10;j++) {
+            table = table + "<td>" +i*j+"</td>";
+            //Tạo các phần tử từ 1 đến 10 trong 1 hàng, sau khi j đạt 10 thì quay lại vòng lặp đầu tiên
+        }
+        table = table +"</tr>";
+    }
+    table = table + "</table>";
+    document.write(table);
+</script>
+</body>
+</html>
